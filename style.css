@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --color-primary: #006241;
+  --color-secondary: #d50032;
+  --color-extra: #d4e9e2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  color: #000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav_container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 5px 0;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+}
+
+section a {
+  color: #fff;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-action li a img {
+    width: 20px;
+    height: 20px;
+}
+
+.coffee {
+  width: 25px;
+  height: 25px;
+} 
+
+.arrow_head {
+  width: 24px;
+  height: 24px;
+}
+
+.button_header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color:#30e614;
+}
+
+.button_header div{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  margin-left: 20px;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+
+}
+
+.logotype {
+  display: flex;
+}
+
+.navbar-menu li {
+  margin: 0px 0px 0px 24px;
+}
+
+.navbar-action {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-action li {
+  margin: 0px 0px 0px 10px;
+}
+
+.navbar-action li a {
+  padding: 0px 16px 0px 0px;
+}
+
+.stores {
+  margin: 0px 40px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.nav_action {
+  margin: 0px 0px 0px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-action li a img {
+  padding: 0px 8px 0px 0px;
+    width: 32px;
+    height: 32px;
+}
+/* Карта 1 */
+.card_1_img img{
+  width: 720px;
+  height: 625px;
+}
+
+.card_1 {
+  display: flex;
+  gap: 0;
+  max-height: 625px;
+}
+
+.card_1_img {
+  flex: 1;
+}
+
+.card_1_text {
+  flex: 1;
+  background-color: #6d4120;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_1_btn {
+    background-color: #6d4120;
+    color: #fff;
+    width: 3519px;
+    min-width: 50px;
+    min-height: 35px;
+    border-radius: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    /* border-color: #fff; */
+    box-sizing: border-box;
+    max-width: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.card_1_btn:hover {
+  background-color: #422915;
+}
+
+.container{
+  width: 1440px;
+  margin: auto;
+}
+
+.card_1_text_p{
+  width: 470px;
+  font-size: 24px;
+}
+
+.card_1_text_h{
+  font-size: 50px;
+}
+
+/* Карта 2 */
+.card_2_img img{
+  height: 420px;
+}
+
+.card_2 {
+  display: flex;
+  gap: 0;
+  height: 420px;
+  margin-top: 32px;
+  flex-direction: row-reverse;
+}
+
+.card_2_img {
+  flex: 1;
+}
+
+.card_2_text {
+  flex: 1;
+  background-color: #e2d4ca;
+  text-align: center;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_2_btn {
+    background-color: #0f8319;
+    color: #fff;
+    width: 3519px;
+    min-width: 50px;
+    min-height: 35px;
+    border-radius: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    /* border-color: #fff; */
+    box-sizing: border-box;
+    max-width: 150px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.card_2_btn:hover {
+  background-color: #4cc514;
+}
+
+.card_2_text_p{
+  width: 445px;
+  font-size: 19px;
+}
+
+.card_2_text_h{
+  font-size: 24px;
+}
+
+/* Карта 3 */
+.card_3_img img{
+  height: 420px;
+}
+
+.card_3 {
+  display: flex;
+  gap: 0;
+  height: 420px;
+  margin-top: 32px;
+  flex-direction: row;
+}
+
+.card_3_img {
+  flex: 1;
+}
+
+.card_3_text {
+  flex: 1;
+  background-color: #e2d4ca;
+  text-align: center;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_3_btn {
+  background-color: #e2d4ca;
+  color: #000000;
+  width: 3519px;
+  min-width: 50px;
+  min-height: 35px;
+  border-radius: 50px;
+  border: 2px solid rgb(0, 0, 0);
+  /* border-color: #fff; */
+  box-sizing: border-box;
+  max-width: 150px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 24px;
+}
+
+.card_3_btn:hover {
+  background-color: #abafa9;
+}
+
+.card_3_text_p{
+  width: 445px;
+  font-size: 19px;
+}
+
+.card_3_text_h{
+  font-size: 24px;
+}
+
+.predfooter {
+  width: 650px;
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+}
+
+.predfooter_txt {
+  line-height: 2;
+  margin-top: 40px;
+}
+
+.predfooter_txt_margin {
+  padding-top: 30px;
+}
+
+.footer {
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, .1), 0 -2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+  width: 100%;
+}
+
+.footer_container_menu{
+  width: 1400px;
+  margin: auto;
+  display: flex;
+}
+
+.footer_column h3{
+  font-size: 19px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.footer_column{
+  margin-right: 40px;
+}
+
+.footer_column li{
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.footer_column a{
+  color: #838181d5;
+  transition: color 0.3s;
+}
+
+.footer_column a:hover{
+  color: #202020;
+}
+
+.footer_container{
+  margin: 0 auto;
+  width: 1400px;
+}
+
+.footer_soc_media_svg{
+  width: 32px;
+  height: 32px;
+}
+
+.svg_soc_media_color{
+  color: black;
+  margin-right: 10px;
+}
+
+.soc_media_pos a:hover .sb-icon-hover{
+  fill: #ccc;
+  opacity: 0.2;
+  r: 80%;
+  transition: fill 0.3s ease, opacity 0.3s ease, r 0.3s ease;
+}
+
+.soc_media{
+  border-top: 1px solid #ccc;
+  padding: 10px;
+}
+
+.legal{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  transition: color 0.3s;
+}
+
+.legal a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.legal a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.copywrite{
+  font-size: 14px;
+  color: #00000094;
+
+}
