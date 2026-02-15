@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sturbuks</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3_position.css">
 </head>
 <body>
     <div class = "container">
@@ -13,69 +14,70 @@
                 <div class="nav_menu">
                     <div class="logotype">
                         <a href="#" class="logo"><img src="img/logo.svg" alt="logo"></a>
+                        <button class="mobile-menu-btn">☰</button>
                     </div>
                     <ul class="navbar-menu">
-                        <li><a href="#">MENU</a></li>
-                        <li><a href="#">REWARDS</a></li>
-                        <li><a href="#">GIFT CARDS</a></li>
+                        <li><a href="#" class="btn_header_left btn_header">MENU</a></li>
+                        <li><a href="#" class="btn_header_left btn_header">REWARDS</a></li>
+                        <li><a href="#" class="btn_header_left btn_header">GIFT CARDS</a></li>
                     </ul>
                 </div>
                 <div class="nav_action">
-                    <ul class="navbar-action">
+                    <ul class="navbar-action navbar-menu">
                         <li>
                             <a href="#" class="stores">
                                 <img src="img/marker.svg" alt="marker">
-                                <span>Find a store</span>
+                                <span class="stores_span">Find a store</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="btn">Sign in</a>
+                            <a href="#" class="btn_header_right btn_header">Sign in</a>
                         </li>
                         <li>
-                            <a href="#" class="btn">Join now</a>
+                            <a href="#" class="btn_header_right btn_header">Join now</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="button_header">
-            <div>
+        <div class="button_middle">
+            <div class="button_middle_coffee">
                 <img src="img/glass.png" alt="glass" class="coffee">
                 <span>Start an order</span>
             </div>
-            <div>
+            <div class="button_middle_arrow">
                 <img src="img/arrow_head.png" alt="arrow_head" class="arrow_head">
             </div>
         </div>
         <main class="main">
-            <section class="card_1">
-                <div class="card_1_img">
+            <section class="card_general">
+                <div class="card_img card_big_img">
                     <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-100683.jpg" alt="A close up of cold foam pouring into iced latte in a glass with &quot;Protein Made Delicious&quot; written in the image.">
                 </div>
-                <div class="card_1_text">
-                    <h2 class="card_1_text_h">Protein just dropped</h2>
-                    <p class="card_1_text_p">Your drink is getting a major upgrade. Level up with protein cold foam or protein-boosted milk, or choose a new favorite from our menu.*</p>
-                    <button class="card_1_btn">Learn more</button>
+                <div class="card_big_text card_text">
+                    <h2 class="card_big_text_h">Protein just dropped</h2>
+                    <p class="card_big_text_p">Your drink is getting a major upgrade. Level up with protein cold foam or protein-boosted milk, or choose a new favorite from our menu.*</p>
+                    <button class="card_big_btn">Learn more</button>
                 </div>
             </section>
-            <section class="card_2">
-                <div class="card_2_img">
+            <section class="card_general card_little">
+                <div class="card_img">
                     <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-100122.jpg" alt="Four fall drinks in mugs and glasses on a wood surface in front of a brown textured background.">
                 </div>
-                <div class="card_2_text">
-                    <h2 class="card_2_text_h">Fall. Starts. Now.</h2>
-                    <p class="card_2_text_p">Our fall flavors are officially here. Time for all things pumpkin and pecan, including the new Pecan Oatmilk Cortado.</p>
-                    <button class="card_2_btn">View the menu</button>
+                <div class="card_little_text card_text">
+                    <h2 class="card_little_text_h">Fall. Starts. Now.</h2>
+                    <p class="card_little_text_p">Our fall flavors are officially here. Time for all things pumpkin and pecan, including the new Pecan Oatmilk Cortado.</p>
+                    <button class="card_little_btn">View the menu</button>
                 </div>
             </section>
-            <section class="card_3">
-                <div class="card_3_img">
+            <section class="card_general card_little">
+                <div class="card_img">
                     <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-101216.jpg" alt="Iced Brown Sugar Oatmilk Shaken Espresso in a glass. Sitting on tabletop with a green striped background.">
                 </div>
-                <div class="card_3_text">
-                    <h2 class="card_3_text_h">Love it? Get it free.</h2>
-                    <p class="card_3_text_p">Just join Starbucks® Rewards and enjoy a <b>free drink</b> with a qualifying purchase during your first week.**</p>
-                    <button class="card_3_btn">Join & order</button>
+                <div class="card_little_text card_text">
+                    <h2 class="card_little_text_h">Love it? Get it free.</h2>
+                    <p class="card_little_text_p">Just join Starbucks® Rewards and enjoy a <b>free drink</b> with a qualifying purchase during your first week.**</p>
+                    <button class="card_little_btn">Join & order</button>
                 </div>
             </section>
             <section class="predfooter">
@@ -133,5 +135,21 @@
             </div>
         </div>
     </footer>
+        <script>
+            document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.querySelector('.navbar-menu:not(.navbar-action)');
+            menu.classList.toggle('active');
+            });
+        </script>
+    <!-- Кнопка, которая будет открывать модальное окно -->
+    <a href="#openModal">Открыть модальное окно</a>
+    <!-- Модальное окно -->
+    <div id="openModal" class="modal">
+        <div class="modal-content">
+            <a href="#close" title="Закрыть" class="close">×</a>
+            <h2>Модальное окно</h2>
+            <p>Это простое модальное окно, созданное с помощью HTML и CSS без JavaScript.</p>
+        </div>
+    </div>
 </body>
 </html>
